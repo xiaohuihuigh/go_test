@@ -14,3 +14,7 @@ type Param struct {
 	K string `json:"k,string"`
 	V string `json:"v,string"`
 }
+
+func (client *IPcClient) Call(request *Request) *Response {
+	ReqStr := Req2Str(request)
+}
